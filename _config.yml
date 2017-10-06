@@ -1,0 +1,19 @@
+repository: avast/avast.github.io
+gems:
+  - jekyll-github-metadata
+
+selected_repositories:
+  Java/Scala libraries & tools:
+    - cactus
+    - metrics
+    - bytes
+    - gradle-dependencies-viewer
+  Docker & cloud tools:
+    - gradle-docker-compose-plugin
+    - marathon-vault-plugin
+    - marathon-deployer
+  Big data tools:
+    - hdfs-shell
+  Golang libraries & tools:
+    - retry-go
+    - hashutil-go

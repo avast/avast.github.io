@@ -1,0 +1,105 @@
+---
+layout: null
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generated" content="{{ site.time }}">
+    <title>Avast open source</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.min.css">
+
+    <style>
+        #masthead {
+            background-image: url('https://static3.avast.com/20171006/web/i/mkt/career/career-bg.jpg');
+            min-height: 20em;
+            padding-top: 8em;
+            margin-bottom: 3em;
+            text-align: center;
+            color: white;
+        }
+        #logo {
+            position: absolute;
+            left: 50px;
+            top: 30px;
+            width: 110px;
+            height: auto;
+        }
+        .intro {
+            font-size: 130%;
+        }
+        body {
+            font-size: 160%;
+            padding: 0;
+            margin: 0;
+        }
+        .repository {
+            float: left;
+            width: 30%;
+            margin-right: 1%;
+        }
+        .repository h4 {
+            margin-bottom: 0.1em;
+            font-size: 150%;
+        }
+        .stats div {
+            display: inline;
+            margin-right: 1em;
+        }
+        .category {
+            float: left;
+            clear: both;
+            padding-bottom: 2em;
+        }
+        a {
+            color: white;
+        }
+        a.repository {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="masthead">
+        <a href="https://www.avast.com" title="avast.com">
+            <img src="https://static.avast.com/11/web/min/i/avast-software.png" id="logo">
+        </a>
+        <div class="container">
+            <h1>Avast open source</h1>
+            <div class="intro">
+                We, Avast developers, love open source technologies and actively try to give back to the community by
+                releasing some of the tools we build. We also warmly welcome any contributions.
+            </div>        
+            <div class="intro">
+                Below you'll find a selection of useful libraries and tools developed by Avast teams.
+                A complete list of repositories can be found on our <a href="https://github.com/avast">GitHub page</a>.
+            </div>    
+        </div>
+    </div>
+    <div class="container">
+        {% for repo_category in site.selected_repositories %}
+        <div class="category">
+            <h3>{{ repo_category[0] }}</h3>
+            {% for repo_name in repo_category[1] %} {% for repo in site.github.public_repositories %} {% if repo_name == repo.name %}
+            <a class="repository" href="{{ repo.html_url }}">
+                <h4>{{ repo.name }}</h4>
+                <div class="stats">
+                    <div><span class="octicon octicon-star"></span>{{ repo.stargazers_count }}</div>
+                    <div><span class="octicon octicon-repo-forked"></span>{{ repo.forks_count }}</div>
+                </div>
+                <div class="desc">
+                    {{ repo.description }}
+                </div>
+            </a>
+            {% endif %} {% endfor %} {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
