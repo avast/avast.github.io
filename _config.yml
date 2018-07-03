@@ -17,5 +17,5 @@ selected_repositories:
   Golang libraries & tools:
     - retry-go
     - hashutil-go
-    - apkparser
     - apkverifier
+    - apkparser
