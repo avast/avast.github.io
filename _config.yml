@@ -10,6 +10,7 @@ selected_repositories:
     - gradle-dependencies-viewer
     - rabbitmq-scala-client
     - scala-hashes
+    - grpc-json-bridge
   Docker & cloud tools:
     - gradle-docker-compose-plugin
     - marathon-vault-plugin
