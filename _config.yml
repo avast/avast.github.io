@@ -8,6 +8,9 @@ selected_repositories:
     - metrics
     - bytes
     - gradle-dependencies-viewer
+    - rabbitmq-scala-client
+    - scala-hashes
+    - grpc-json-bridge
   Docker & cloud tools:
     - gradle-docker-compose-plugin
     - marathon-vault-plugin
@@ -19,3 +22,4 @@ selected_repositories:
     - hashutil-go
     - apkverifier
     - apkparser
+    - teamcity-job-executor
