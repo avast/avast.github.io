@@ -4,14 +4,15 @@ gems:
 
 selected_repositories:
   Java/Scala libraries & tools:
+    - rabbitmq-scala-client
     - cactus
     - metrics
     - bytes
     - gradle-dependencies-viewer
-    - rabbitmq-scala-client
     - scala-hashes
     - grpc-json-bridge
-  Docker & cloud tools:
+  Docker, Kubernetes & cloud tools:
+    - k8s-admission-webhook
     - gradle-docker-compose-plugin
     - marathon-vault-plugin
     - marathon-deployer
