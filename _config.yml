@@ -24,3 +24,6 @@ selected_repositories:
     - apkverifier
     - apkparser
     - teamcity-job-executor
+  YARA tools:
+    - yaramod
+    - yls
