@@ -27,3 +27,4 @@ selected_repositories:
   YARA tools:
     - yaramod
     - yls
+    - yari
