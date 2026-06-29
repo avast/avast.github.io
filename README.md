@@ -12,7 +12,7 @@ If you want to tweak the HTML template, follow the instructions in GitHub's [Set
 
 Since the current template makes use of [repository metadata](https://help.github.com/articles/repository-metadata-on-github-pages/) in order to display some repository content (description, forks, watchers) dynamically, you'll also need to do some additional token setup as described in the [Using repository metadata locally](https://help.github.com/articles/repository-metadata-on-github-pages/#using-repository-metadata-locally) article.
 
-Then you can run the following command to have the site be regenerated and server locally on every save:
+Then you can run the following command to have the site be regenerated and served locally on every save:
 
 ```
 JEKYLL_GITHUB_TOKEN=<yourtoken> bundle exec jekyll serve --verbose
